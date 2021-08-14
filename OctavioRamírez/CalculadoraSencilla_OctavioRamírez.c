@@ -1,18 +1,27 @@
 //PENDIENTE DE DOCUMENTAR
 
+//Inclusión de bibliotecas.
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
 
+
+//Función para manejar la selección de opciones del menú de la Calculadora simple.
 bool seleccionarOpcion(){
 
+    //Variable de control para identificar cuando el usuario quiera dejar de usar la Calculadora.
     bool continuar = false;
+    //Variable para almacenar el valor de la opción seleccionada por el usuario.
     int entrada;
     scanf("%d", &entrada);
+    //Variables para almacenar los valores utilizados en la operación seleccionada por el usuario.
     float primer, segundo; 
+    //Variable para almacenar la respuesta del usuario sobre si desea continuar utilizando la Calculadora.
     char respuesta;
 
+    //Switch-case para las opciones del menú de la Calculadora simple.
     switch(entrada){
+        //Suma
         case 1:
             printf("\nProporcione el primer número que se va a sumar: ");
             scanf("%f", &primer);
@@ -33,7 +42,7 @@ bool seleccionarOpcion(){
             }
             
         break;
-            
+        //Resta
         case 2:
             printf("\nProporcione el número del cual se va a restar: ");
             scanf("%f", &primer);
@@ -53,7 +62,7 @@ bool seleccionarOpcion(){
             }
 
         break;
-        
+        //Multiplicación
         case 3:
             printf("\nProporcione el primer número a multiplicar: ");
             scanf("%f", &primer);
@@ -73,7 +82,7 @@ bool seleccionarOpcion(){
             }
 
         break;
-        
+        //División
         case 4:
             printf("\nProporcione el número que desea dividir: ");
             scanf("%f", &primer);
@@ -93,13 +102,12 @@ bool seleccionarOpcion(){
             }
 
         break;
-        
+        //Salir
         case 5:
             printf("\nGracias por utilizar ORR-CALC, hasta pronto.\n\n\n");
         
         break;
-        
-        
+        //Opciones no aceptadas
         default:
             printf("\nEl valor seleccionado no corresponde a ninguna de las opciones disponibles.\n");
             printf("Inténtelo nuevamente.\n\n");
@@ -109,6 +117,7 @@ bool seleccionarOpcion(){
     return continuar;
 }
 
+//Función para impresión del menú de opciones de la Calculadora simple.
 void imprimirMenu(){
     do{
         printf("\nCalculadora simple.\n");
@@ -121,7 +130,7 @@ void imprimirMenu(){
     }while(seleccionarOpcion()==true);
 }
 
-
+//Método main para ejecución del programa.
 int main(){
     imprimirMenu();
     return 0;
