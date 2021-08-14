@@ -6,6 +6,6 @@ Por: Laura Gabriel Santes
 
 int main ()
 {
-    printf("Hola UAM\n");//Se imprime linea
+    printf("Hola UAM\n\n");//Se imprime linea
     return 0;
 }
