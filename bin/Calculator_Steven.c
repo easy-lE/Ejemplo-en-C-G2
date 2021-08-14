@@ -10,9 +10,9 @@ int main()
     int ok = 0;
     VAMOS:
     printf("SUPER CALCULADORA");
-    printf("Seleccione que operación desea realizar entre dos números:\n1=suma\n2=resta\n3=multiplicación\n4=división\n");
+    printf("Choose operation:\n1=sum\n2=substraction\n3=multiplication\n4=division\n");
     scanf("%f",&data);
-    printf("Teclee dos numeros separados por un espacio\n");
+    printf("TGive two numbers separated with blank space\n");
     scanf("%f %f",&x,&y);
     
 if(data == 1){
