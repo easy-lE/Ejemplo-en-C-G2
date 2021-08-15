@@ -1,4 +1,4 @@
-*/author: Luis Lopez
+/*author: Luis Lopez
 */
 
 #include <stdio.h>
