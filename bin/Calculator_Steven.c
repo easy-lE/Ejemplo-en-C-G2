@@ -1,4 +1,4 @@
-ç//Calculator
+//Calculator
 //By : Axel Steven Paz Bonilla
 //Simple calculator no conflicts
 
@@ -12,7 +12,7 @@ int main()
     printf("SUPER CALCULADORA");
     printf("Choose operation:\n1=sum\n2=substraction\n3=multiplication\n4=division\n");
     scanf("%f",&data);
-    printf("TGive two numbers separated with blank space\n");
+    printf("Give two numbers:\n");
     scanf("%f %f",&x,&y);
     
 if(data == 1){
