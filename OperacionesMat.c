@@ -1,3 +1,6 @@
+/*author: Luis López
+*/
+
 #include <stdio.h>
 
 int main () {
