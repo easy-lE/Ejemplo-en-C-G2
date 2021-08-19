@@ -1,0 +1,12 @@
+//Progamado: Erick Martínez Flores
+//Descripción: Progama de bienvenida
+//Fecha: 10/08/2021
+
+#include <stdio.h>
+
+int main()
+{
+    printf("HOLA UAM");
+
+    return 0;
+}
